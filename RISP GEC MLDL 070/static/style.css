@@ -1,0 +1,22 @@
+#g
+{
+font-family:"Segoe Script";
+text-align:center;
+color:red;
+}
+body {
+}
+#gh
+{
+color:red;
+}
+.button1 {
+  background-color: green;
+  border: none;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

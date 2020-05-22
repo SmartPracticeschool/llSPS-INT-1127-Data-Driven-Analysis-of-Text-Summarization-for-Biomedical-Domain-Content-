@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>NLP Text summarization</title> 
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+<body>
+	<h1 id="g">NLP Text Summarization</h1>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+		<form action="{{ url_for('predict')}}" method="post">
+		<br><br>
+		<textarea id="text" rows="15" name="n1" cols="76">
+		</textarea><br><br>
+		<center><input type="submit" value="Summarize" class="button1"></center>
+		</form>
+		</div>
+		<div class="col-sm-6">
+		<h3 id="gh">Summary</h3>
+		{{ prediction_text }}
+		</div>
+	</div>
+	</div>
+</body>
+</html>
